@@ -41,12 +41,6 @@
             border-radius: 5px;
             font-weight: bold;
         }
-        iframe {
-            width: 800px;
-            height: 450px;
-            border: none;
-            margin-top: 20px;
-        }
     </style>
 </head>
 <body>
@@ -56,57 +50,20 @@
     <div class="episode-list">
         <div class="episode-item">
             <h3>Episodio 1</h3>
-            <a href="#1" class="watch-button">Guarda ora</a>
+            <a href="https://www.animesaturn.cx/watch?file=ttg1G7W6NtYs&s=alt&jwsource=cl" target="_blank">Guarda ora</a>
         </div>
         <div class="episode-item">
             <h3>Episodio 2</h3>
-            <a href="#2" class="watch-button">Guarda ora</a>
+            <a href="https://www.animesaturn.cx/watch?file=example-2" target="_blank">Guarda ora</a>
         </div>
         <div class="episode-item">
             <h3>Episodio 3</h3>
-            <a href="#3" class="watch-button">Guarda ora</a>
+            <a href="https://www.animesaturn.cx/watch?file=example-3" target="_blank">Guarda ora</a>
         </div>
         <!-- Aggiungi altri episodi qui -->
     </div>
 
     <br>
     <a href="index.html" class="button">Torna alla Home</a>
-
-    <!-- Video iframe per l'episodio 1 -->
-    <div id="1" class="episode-video">
-        <h2>Episodio 1</h2>
-        <iframe src="https://www.animesaturn.cx/watch?file=ttg1G7W6NtYs&s=alt&jwsource=cl" allowfullscreen></iframe>
-    </div>
-
-    <!-- Video iframe per l'episodio 2 -->
-    <div id="2" class="episode-video" style="display: none;">
-        <h2>Episodio 2</h2>
-        <iframe src="https://www.animesaturn.cx/watch?file=tuo-link-episodio-2" allowfullscreen></iframe>
-    </div>
-
-    <!-- Video iframe per l'episodio 3 -->
-    <div id="3" class="episode-video" style="display: none;">
-        <h2>Episodio 3</h2>
-        <iframe src="https://www.animesaturn.cx/watch?file=tuo-link-episodio-3" allowfullscreen></iframe>
-    </div>
-
-    <script>
-        // Funzione per mostrare il video dell'episodio selezionato
-        const watchButtons = document.querySelectorAll('.watch-button');
-        watchButtons.forEach(button => {
-            button.addEventListener('click', function(event) {
-                event.preventDefault();
-                const episodeId = this.getAttribute('href').substring(1);
-                
-                // Nascondi tutti i video
-                const allVideos = document.querySelectorAll('.episode-video');
-                allVideos.forEach(video => video.style.display = 'none');
-                
-                // Mostra il video dell'episodio selezionato
-                const selectedVideo = document.getElementById(episodeId);
-                selectedVideo.style.display = 'block';
-            });
-        });
-    </script>
 </body>
 </html>
