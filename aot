@@ -41,16 +41,11 @@
 
     <div class="anime-list">
         <div class="anime-item">
-            <img src="anime1.jpg" alt="Anime 1">
-            <h3>Nome Anime 1</h3>
-            <p>Descrizione breve dell'anime.</p>
+            <img src="logoaot.png" alt="Attack on Titan - Stagione 1">
+            <h3>Attack on Titan - Stagione 1</h3>
+            <p>La storia di Eren Yeager e dei suoi amici che si uniscono all'esercito per combattere i giganti che minacciano l'umanità.</p>
         </div>
-        <div class="anime-item">
-            <img src="anime2.jpg" alt="Anime 2">
-            <h3>Nome Anime 2</h3>
-            <p>Descrizione breve dell'anime.</p>
-        </div>
-        <!-- Aggiungi altri anime qui -->
+        <!-- Puoi aggiungere altri anime qui -->
     </div>
 </body>
 </html>
